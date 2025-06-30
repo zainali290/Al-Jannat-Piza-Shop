@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Al Jannat Pizza</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🍕 Al Jannat Pizza</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Fresh, Hot, Delicious</h2>
+    <p>Order the best pizza in town today!</p>
+    <a href="#menu" class="btn">View Menu</a>
+  </section>
+
+  <section id="menu" class="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-items">
+      <div class="item">
+        <img src="images/Margherita Pizza.jpg" alt="Margherita Pizza">
+        <h3>Margherita</h3>
+        <p>Rs.1500</p>
+        <button onclick="addToCart('Margherita', 1500)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="images/Pepperoni Pizza.jpg" alt="Pepperoni Pizza">
+        <h3>Pepperoni</h3>
+        <p>Rs.2000</p>
+        <button onclick="addToCart('Pepperoni', 2000)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="images/Veggie Pizza.jpg" alt="Veggie Pizza">
+        <h3>Veggie</h3>
+        <p>Rs.1800</p>
+        <button onclick="addToCart('Veggie', 1800)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="cart" id="cart">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p id="total">Total: Rs 0.00</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: meetforzain123@gmail.com</p>
+    <p>Phone: +92-348-5209586</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025  Al Jannat Pizza</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
